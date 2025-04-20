@@ -1,0 +1,64 @@
+# Job Posting Data Analysis
+
+## Project Overview
+This project involves scraping job postings from Indeed for different locations in Nigeria, analyzing job trends, and performing data-driven insights. The analysis is aimed at understanding job availability, categories, remote work trends, and other factors that may be useful for job seekers and employers.
+
+## Data Collection
+- **Source:** Indeed job postings
+- **Scraping Tool:** `jobspy` Python library
+- **Locations Covered:** Kano, Abuja, Rivers, Lagos and Oyo state
+- **Format:** Data is saved as CSV files
+
+## Steps Taken
+### 1. Job Data Scraping
+- Scraped job postings using the `jobspy` library.
+- Fetched job details including title, company, location, date posted, job type, remote status, job category, etc
+- Saved results for each city as a csv file
+
+### 2. Data Preprocessing
+- Loaded CSV files into Pandas DataFrames.
+- Merged all the csv files for each state into one csv.
+- Checked for missing values and inconsistencies and handled them.
+- Removed unneccessary columns
+- Grouped Job titles into categories by matching them with appropriate keywords(tech,medical,sales, etc)
+- some locations came with inconsistent naming, i corrected them and assigned appropriate names to each location
+
+### 3. Exploratory Data Analysis (EDA)
+- Analyzed and visualized job Distribution by city.
+- Analyzed and visualized top hiring companies.
+- Analyzed and visualized job Types Distribution.
+- Visualized the distribution of job postings by category.
+- Analyzed and visualized job categories in each city.
+- Determined which city has the most remote jobs.
+- Determined which job category had the most remote jobs.
+- Examined the time frame of job postings.
+
+### 4. Findings
+- The most in-demand job categories were identified.
+- Remote job trends across different job categories were analyzed.
+- Insights were derived to help job seekers understand hiring trends in Nigeria.
+
+## Technologies Used
+- **Python** (for scripting and analysis)
+- **Pandas** (for data manipulation)
+- **Plotly** (for visualization)
+- **Jobspy** (for job scraping)
+
+## How to Reproduce
+1. Install dependencies:
+   ```bash
+   pip install pandas jobspy plotly
+   ```
+2. Run the job scraping scripts to collect fresh data.
+3. Use Jupyter Notebook or a Python script to perform analysis.
+
+## Future Improvements
+- Expanding the dataset to include more locations and industries.
+- Implementing machine learning models to predict job trends.
+- Automating job data collection on a regular basis.
+
+## Author
+**Abdulrahman Kamilu Ilah**
+- Email: abdulrahmanilah4@gmail.com
+- LinkedIn: [Profile](https://www.linkedin.com/in/abdulman-outis-4612b5357?trk=contact-info)
+
